@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="CSS/Monopoly.css" rel="stylesheet" type="text/css">
+        <title>My Little Poly</title>
+
+    </head>
+    <body onLoad="Load()">
+
+    <table border="1" id="bord">
+        <tr>
+            <td class="corner"><div id="20"> </div></td>
+            <td onclick="HuisKopen(150000, 'Valencia', 21)"><div id="21"> </div></td>
+            <td><div id="22"> </div></td>
+            <td onclick="HuisKopen(150000, 'Barcelona', 23)"><div id="23"> </div></td>
+            <td onclick="HuisKopen(150000, 'Madrid', 24)"><div id="24"> </div></td>
+            <td><div id="25"> </div></td>
+            <td onclick="HuisKopen(150000, 'Malmo', 26)"><div id="26"> </div></td>
+            <td onclick="HuisKopen(150000, 'Uppsala', 27)"><div id="27"> </div></td>
+            <td><div id="28"> </div></td>
+            <td onclick="HuisKopen(150000, 'Orebro', 29)"><div id="29"> </div></td>
+            <td class="corner"><div id="30"> </div></td>
+        </tr>
+        <tr>
+            <td onclick="HuisKopen(100000, 'Ypecolsga', 19)"><div id="19"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td onclick="HuisKopen(200000, 'Milaan', 31)"><div id="31"> </div></td>
+        </tr>
+        <tr>
+            <td onclick="HuisKopen(100000, 'Maarssen', 18)"><div id="18"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td onclick="HuisKopen(200000, 'Genua', 32)"><div id="32"> </div></td>
+        </tr>
+        <tr>
+            <td><div id="17"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td><div id="33"> </div></td>
+        </tr>
+        <tr>
+            <td onclick="HuisKopen(100000, 'Doorn', 16)"><div id="16"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td onclick="HuisKopen(200000, 'Bari', 34)"><div id="34"> </div></td>
+        </tr>
+        <tr>
+            <td><div id="15"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td><div id="35"> </div></td>
+        </tr>
+        <tr>
+            <td onclick="HuisKopen(100000, 'Zurich', 14)"><div id="14"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td><div id="36"> </div></td>
+        </tr>
+        <tr>
+            <td onclick="HuisKopen(100000, 'Basel', 13)"><div id="13"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td onclick="HuisKopen(200000, 'Hoeryong', 37)"><div id="37"> </div></td>
+        </tr>
+        <tr>
+            <td><div id="12"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td><div id="38"> </div></td>
+        </tr>
+        <tr>
+            <td onclick="HuisKopen(100000, 'Bern', 11)"><div id="11"> </div></td>
+            <td class="midden" colspan="9"></td>
+            <td onclick="HuisKopen(200000, 'Pong-Yang', 39)"><div id="39"> </div></td>
+        </tr>
+        <tr>
+            <td class="corner"><div id="10"> </div></td>
+            <td onclick="HuisKopen(50000, 'Parijs', 9)"><div id="9"> </div></td>
+            <td onclick="HuisKopen(50000, 'Lyon', 8)"><div id="8"> </div></td>
+            <td><div id="7"> </div></td>
+            <td onclick="HuisKopen(50000, 'Nice', 6)"><div id="6"> </div></td>
+            <td><div id="5"> </div></td>
+            <td><div id="4"> </div></td>
+            <td onclick="HuisKopen(50000, 'Remich', 3)"><div id="3"> </div></td>
+            <td><div id="2"> </div></td>
+            <td onclick="HuisKopen(50000, 'Wiltz', 1)"><div id="1"> </div></td>
+            <td class="corner"><div id="0"> </div></td>
+        </tr>
+
+    </table>
+    
+    <div id="Message">
+    </div>
+    <div id="Message2">
+    </div>
+        <br>
+
+        <button onclick="Koop()" id="KoopB">
+            Kopen
+        </button>
+        <button onclick="Refuse()" id="RefuseB">
+            Neen Dank
+        </button>
+        <button onclick="Okay()" id="Okay">
+            Okay
+        </button>
+        <button onclick="Betaalon()" id="Betaal">
+            Betaal
+        </button>
+        <button onclick="Skip()" id="Skip">
+            Skip
+        </button>
+        <button onclick="Akkoord()" id="Akkoord">
+            Akkoord
+        </button>
+        <button onclick="Refuse()" id="NietAkkoord">
+            Niet Akkoord
+        </button>
+        
+     <input id="Bieden" type="number" placeholder="Bedrag" maxlength="8" value="0" required>
+     
+    </div>
+
+    <input type="button" id="EndTurn" value="End Turn" onclick="EndTurn()"/>    
+    <input type="button" id="RollDice" value="Roll Dice!!" onclick="RollDice()" enabled=false/>
+    <input id="D1" type="button" disabled/>
+    <input id="D2" type="button" disabled/>
+    <table id="Moneyshow">
+        <tr>
+            <td id="NaamP1"></td>
+            <td id="MoneyP1"></td>
+            <td id="FaillietP1"></td>
+        </tr>
+        <tr>
+            <td id="NaamP2"></td>
+            <td id="MoneyP2"></td>
+        </tr>
+        <tr>
+            <td id="NaamP3"></td>
+            <td id="MoneyP3"></td>
+        </tr>
+        <tr>
+            <td id="NaamP4"></td>
+            <td id="MoneyP4"></td>
+        </tr>
+    </table>
+
+
+    <table border="1" id="HUD">
+        <tr>
+            <td>Turn: </td>
+            <td id="TurnHUD">Let's Start!</td>
+        </tr>
+        <tr>
+            <td>Jackpot: </td>
+            <td id="JPHUD">$ 0</td>
+
+        </tr>
+
+    </table>
+        
+    <table border="1" id="PlayerData">
+        <tr>
+            <td></td>
+            <th id="NaamP11" style=color:blue;></th>
+            <th id="NaamP22" style=color:red;></th>
+            <th id="NaamP33" style=color:green;></th>
+            <th id="NaamP44" style=color:orange;></th>
+        </tr>
+        <tr>
+            <th> Straten:</th>
+            <td id=P1Str>  </td>
+            <td id=P2Str>  </td>
+            <td id=P3Str>  </td>
+            <td id=P4Str>  </td>
+        </tr>
+        <tr>
+            <th> Stations:</th>
+            <td id=P1Stat>  </td>
+            <td id=P2Stat>  </td>
+            <td id=P3Stat>  </td>
+            <td id=P4Stat>  </td>
+        </tr>
+        <tr>
+            <th> Kern Centrales:</th>
+            <td id=P1Nut>  </td>
+            <td id=P2Nut>  </td>
+            <td id=P3Nut>  </td>
+            <td id=P4Nut>  </td>
+        </tr>
+    </table>
+    
+    <div id="Log" disabled></div>
+
+    <div id="Startgame">
+        <h1>Welkom bij My Little Poly.</h1>
+                  <button onclick="Spelregels()">Spelregels</button>
+        <h4>Kies een naam.</h4> 
+        Player 1: <input id="P1Name" type="name" placeholder="Player 1" maxlength="8" required>  Initialen: <input id="P1Ini" type="name" placeholder="P1" maxlength="2" size="2" required><br>
+        Player 2: <input id="P2Name" type="name" placeholder="Player 2" maxlength="8" required>  Initialen: <input id="P2Ini" type="name" placeholder="P2" maxlength="2" size="2" required><br>
+        Player 3: <input id="P3Name" type="name" placeholder="Player 3" maxlength="8" required>  Initialen: <input id="P3Ini" type="name" placeholder="P3" maxlength="2" size="2" required><br>
+        Player 4: <input id="P4Name" type="name" placeholder="Player 4" maxlength="8" required>  Initialen: <input id="P4Ini" type="name" placeholder="P4" maxlength="2" size="2" required><br>
+          <br>
+          <button onclick="Choosename()">Start!</button>                      
+    </div>
+
+    <div id="Spelregels">
+        <h1 style="text-align:center;">My Little Poly</h1>
+        <h2 style="text-align:center;">Info: </h2>
+        <p style="text-align:center; color: red;">Dit is een Custom Monopoly<br>
+        Het is <b>geen</b> exacte copy van de echte Monopoly<br>
+        Deze twist is bedacht omdat alles tegenwoordig snel gaat, en je niet altijd uren de tijd hebt om te spelen.<br>
+        
+
+        </p>
+        <h2 style="text-align:center;">Spelregels voor My Little Poly</h2>
+        <b>Een speel beurt gaat als volgt:</b><br>
+        <ol>
+        <li>Gooi de dobbelstenen.</li>
+        <li><ul style="list-style-type:disc"><li>Plaats zonder eigenaar? optie om te kopen -> Ja of Nee.</li>
+        <li>Plaats met eigenaar? -> Huur betalen gebasseerd op het aantal huizen die er staan </li></ul>
+        <li>Huis bouwen -> Klik op de Plaats(vakje) waarvan je eigenaar bent.</li>
+        <li>Plaats overkopen -> Klik op de Plaats(vakje) van een tegen speler  en voer je bod in. Tegenspeler kan kiezen om akkoord te gaan.</li>
+        <li>Druk op End Turn om de beurt te beeindigen</li>
+        </ol>
+        <h2 style="text-align:center;">Dingen die je moet weten:</h2>
+        <ul>
+            <li>Je hoeft geen setje steden te hebben om huizen te gaan bouwen. </li>
+            <li>Om een huis te bouwen in je stad; Klik op het vakje <b>tijdens</b> je beurt.</li>
+            <li>Wil je een stad overkopen van een andere speler? Klik op de stad die je wilt overkopen <b>tijdens</b> jouw beurt.</li>
+            <li>Als geld bedrag onder $0 is krijg je nog 1 ronde de tijd om dingen te verkopen om weer terug boven $0 te komen anders ben je definitief failliet.</li>
+        </ul>        
+        <h4>Dingen die veranderd zijn: </h4>
+        <ul>
+            <li>Namen van Steden en Straten</li>
+            <li>Custom Kans en Algemeen-Fonds kaarten</li>
+        </ul>
+        </p>
+
+        <h4 style="text-align:center;">Kosten van huizen bouwen</h4>
+        <p style="text-align:center;">
+        Zuid kant: <b>$50.000</b> per huis/hotel<br>
+        West kant: <b>$100.000</b> per huis/hotel<br>
+        Noord kant: <b>$150.000</b> per huis/hotel<br>
+        Oost kant: <b>$200.000</b> per huis/hotel<br>
+        </p>
+        <br><p style="text-align:center;"><button onclick="Hideregels()">Okay</button></p>
+    </div>
+
+
+    <script src="Javascript/PonyBACKUP.js" language="javascript" type="text/javascript"></script>
+    </body>
+</html>

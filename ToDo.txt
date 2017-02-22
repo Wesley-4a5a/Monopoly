@@ -1,0 +1,45 @@
+ADDMONEY EN REMMONEY EN DMONEY WAREN TURN NU CURPTURN -> Problemen? Revert
+LogRent Problemen? ->     LogRent(betaal, Eigenaartje); terug in functie ipv switch
+
+Fixed:
+
+Board ontwerp
+Tabel werkend op board
+Dice functie
+Vakjes -> straten -> prijzen 
+Pyongyang is nu buyable en start is fixed
+Kaarten Add/Remove money
+Okay knop blijft niet meer hangen
+Resizable Log
+Namen van straten in popup
+Jackpot = Free perking. Add = Kans/Algemeen en Belasting
+Rent - Huis - Kopen - Kaart -> in log.
+Cheap-ass log met Turn en Jackpot money
+Log met huizen per player
+Kaarten die je moven naar specifieke spot
+Ga naar jail
+Namen aan wie je betaald
+Namen players
+Initialen
+Nice Shadow rondom message.
+Jail Betalen.
+Huis kopen tot hotel en niet verder.
+Straten overkopen van andere.
+Huiskopen -> Verder uitwerken en showen op board
+Jail -> Keuze geven Skip turn of betaal $????
+Win/Failliet
+
+Todo:
+
+
+---------------------------------------------------------------------------------------------
+
+
+Optional:
+
+To Do:
+Grotere Players, Meer visible bij turn?
+
+
+Fixed:
+Custom Kaarten?

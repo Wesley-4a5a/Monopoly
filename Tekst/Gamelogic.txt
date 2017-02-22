@@ -1,0 +1,10 @@
+Plan van aanperk:
+
+Speler begint op start.
+Speler gooit een dobbelsteen.
+Speler komt op plaats? -> Vraag of wilt kopen.
+Speler komt op kans/AF -> Popup locatie -> Draw kaart. (Geen keus)
+Speler komt op belasting -> Speler betaalt (Geen keus) -> Geen geld? Game over
+Speler komt op plaats van andere speler? -> Bepalen hoeveel het kost. -> Betalen aan die speler. -> Geen geld? Game over
+
+ARRAY: STRAATNAANM[AANTALHUISJES OP STRAAT]; 

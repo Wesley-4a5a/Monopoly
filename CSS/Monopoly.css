@@ -1,0 +1,417 @@
+
+body{
+    background-image: url("../IMG/Tafelmonopoly.jpg");
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+}
+
+#bord{
+    width: 93.6vh; 
+    height: 93.6vh; 
+    border-collapse: collapse; 
+    border: black 1px; 
+    background-image: url("../IMG/MonopolyCustom.jpg"); 
+    background-size: cover;
+}
+
+#Startgame{
+    Position: fixed;
+    background-color: lightgrey;
+    border: 3px groove lightgreen;
+    padding: 5vh;
+    max-width: 70vh;
+    max-height: 60vh;
+    top: 30vh;
+    left: 65vh;
+    text-align: center;
+    box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.85);
+    -webkit-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.85);
+    -moz-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.85);
+    z-index: 40;
+    visibility: visible;
+}
+
+#Spelregels{
+    Position: fixed;
+    background-color: lightgrey;
+    border: 3px groove lightgreen;
+    padding: 5vh;
+    max-width: 75vh;
+    max-height: 65vh;
+    top: 10vh;
+    left: 54vh;
+    box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.55);
+    -moz-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.55);
+    z-index: 1000;
+    visibility: visible;
+    overflow: auto;
+    resize: both;
+}
+
+#Moneyshow{
+    color:black;
+    position:fixed;
+    left:14vh;
+    top:18vh;
+}
+
+#MoneyP1{    
+    color:black;
+   
+}
+#MoneyP2{    
+    color:black;
+   
+}
+#MoneyP3{  
+    color:black;
+    
+}
+#MoneyP4{    
+    color:black;
+    
+}
+
+
+#Message{
+    position: fixed;
+    background-color: grey;
+    top: 25vh;
+    left: 60vh;
+    min-width: 25%;
+    max-width: 25%;
+    text-align: center;
+    font-size: 120%;
+    color: white;
+    padding: 20vh 18vh 20vh 20vh;
+    border: 2px white groove;
+    box-shadow: 5px 5px 5px #888888;
+    visibility: hidden;
+    box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.75);
+    z-index: 40;
+}
+
+#Message2{
+    position: fixed;
+    background-color: grey;
+    top: 25vh;
+    left: 60vh;
+    min-width: 25%;
+    max-width: 25%;
+    text-align: center;
+    font-size: 120%;
+    color: white;
+    padding: 20vh 18vh 20vh 20vh;
+    border: 2px white groove;
+    box-shadow: 5px 5px 5px #888888;
+    visibility: hidden;
+    box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 7px 3000px 1045px rgba(0,0,0,0.75);
+    z-index: 40;
+}
+
+#Dood{
+    position: fixed;
+    left: 70vh;
+}
+
+#KoopB{
+    position: fixed;
+    left: 80vh;
+    top: 56vh;
+    font-size: 130%;
+    background-color: lightgrey;
+    border: 2px groove white;
+    visibility: hidden;
+    z-index: 1050;
+}
+
+#RefuseB{
+    position: fixed;
+    left: 118vh;
+    top: 56vh;
+    background-color: lightgrey;
+    font-size: 130%;
+    border: 2px groove white;
+    visibility: hidden;
+    z-index: 1050;
+}
+
+#Okay{
+    position: fixed;
+    left: 99vh;
+    top: 56vh;
+    background-color: lightgrey;
+    font-size: 130%;
+    border: 2px groove white;
+    visibility: hidden;
+    z-index: 1050;
+}
+
+#Betaal{
+    position: fixed;
+    left: 100vh;
+    top: 56vh;
+    font-size: 130%;
+    background-color: lightgrey;
+    border: 2px groove white;
+    visibility: hidden;
+    z-index: 1050;
+}
+
+#Skip{
+    position: fixed;
+    left: 118vh;
+    top: 56vh;
+    background-color: lightgrey;
+    font-size: 130%;
+    border: 2px groove white;
+    visibility: hidden;
+    z-index: 1050;
+}
+
+#Akkoord{
+    position: fixed;
+    left: 120vh;
+    top: 56vh;
+    font-size: 130%;
+    background-color: lightgrey;
+    border: 2px groove white;
+    visibility: hidden;
+    z-index: 1050;
+}
+#NietAkkoord{
+    position: fixed;
+    left: 120vh;
+    top: 62vh;
+    font-size: 130%;
+    background-color: lightgrey;
+    border: 2px groove white;
+    visibility: hidden;
+    z-index: 1050;
+}
+
+#Bieden{
+    position: fixed;
+    left: 80vh;
+    top: 56vh;
+    visibility:hidden;
+    z-index: 1050;
+    font-size: 120%;
+}
+
+
+#Log{
+    border: 2px groove lightgreen; 
+    background-color: lightgray;
+    position:absolute; 
+    left:14vh;
+    font-family: Helvetica;
+    font-size: 80%;
+    bottom: 18.5vh;
+    height: 20vh;
+    width: 35vh;
+    max-width: 50vh;
+    max-height: 30vh;
+    overflow: auto;
+    resize: both;
+    visibility: hidden;
+}
+
+#HUD{
+    background-color:lightgreen;
+    min-width: 5vw;
+    position:fixed;
+    left: 14vh;
+    top: 40vh;
+    visibility: hidden;
+    
+}
+
+#TurnHUD{
+    min-width: 4vw;
+}
+
+#PlayerData{
+    background-color: lightgray;
+    color: Black;
+    position:fixed;
+    right: 5vh;
+    bottom: 5vh;
+    visibility: hidden;
+}
+
+#P1Str{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P1Stat{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P1Nut{
+    height: 15vh;
+    width: 15vh;    
+}
+#P2Str{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P2Stat{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P2Nut{
+    height: 15vh;
+    width: 15vh;    
+}
+
+#P3Str{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P3Stat{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P3Nut{
+    height: 15vh;
+    width: 15vh;    
+}
+
+#P4Str{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P4Stat{
+    height: 15vh;
+    width: 15vh;
+}
+
+#P4Nut{
+    height: 15vh;
+    width: 15vh;    
+}
+
+.corner{
+    width: 12.2vh;
+    height: 12.2vh;
+}
+
+input:focus{
+    outline:none;
+}
+
+td{
+    padding:0;
+    margin:0;
+}
+
+.midden{
+    border: none;
+}
+
+#D1{
+    text-align:center;
+    background-color:white;
+    color: black;
+    border:black 0.5vh solid;
+    position:fixed;
+    left:60vh;
+    top:18vh;
+    height:5vh;
+    width:5vh;
+    border-radius:10px;
+    font-size:3vh;
+    box-shadow: 2px 2px 1px #888888;
+    visibility: hidden;
+}
+#D2{
+    text-align:center;
+    background-color:white;
+    color:black;
+    border:black 0.5vh solid;
+    position:fixed;
+    left:68vh;
+    top:18vh;
+    height:5vh;
+    width:5vh;
+    border-radius:10px;
+    font-size:3vh;
+    box-shadow: 2px 2px 1px #888888;
+    visibility: hidden;
+}
+
+#RollDice{
+    position:fixed;
+    left:59vh;
+    top:24vh;
+    height:5vh;
+    width: auto;
+    border-radius:10px;
+    font-size:3vh;
+    box-shadow: 2px 2px 1px #888888;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#EndTurn{
+    position:fixed;
+    left: 59vh;
+    top:24vh;
+    height: 5vh;
+    width: 16vh;
+    border-radius:10px;
+    font-size:3vh;
+    z-index: 0;
+    visibility: hidden;
+}
+
+#0, #10, #20, #30{
+    position: relative;
+    margin: 4.1vh;
+    padding: 0;
+    width: 4vh;
+    height: 4vh;
+}
+
+
+
+
+.Huis:before {
+    color:black;
+  border-bottom: 1vh solid #00CC00;
+  border-left: 1vh solid transparent;
+  border-right: 1vh solid transparent;
+  content: "";
+  height: 3vh;
+  left: -0.3vh;
+  position: absolute;
+  top: -3.8vh;
+  width: 0.2vh;
+ 
+}
+       
+.Hotel:before {
+  border-bottom: 1vh solid red;
+  border-left: 1vh solid transparent;
+  border-right: 1vh solid transparent;
+  content: "";
+  height: 3vh;
+  left: -0.3vh;
+  position: absolute;
+  top: -3.8vh;
+  width: 0.2vh;
+}
+       

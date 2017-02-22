@@ -1,0 +1,47 @@
+Spanje:
+	Valencia
+	Barcelona
+	Madrid
+	
+Zweden
+	Malmo
+	Uppsala
+	Orebro
+
+Luxemburg:
+	Wiltz
+	Remich
+
+Frankrijk:
+	Parijs
+	Lyon
+	Nice
+
+Zwitserland
+	Zurich
+	Basel
+	Bern
+
+Nederland
+	Doorn
+	Maarssen
+	Ypecolsga
+
+Italie
+	Milaan
+	Genua
+	Bari
+
+Noord Korea
+	Hoeryong
+	Pyongyang
+
+Stationen
+	Kyiv-Pasazhyrs'kyi
+	krakow Glowny
+	Madrid atocha
+	Oberhausen Hauptbahnhof			
+
+Kerncentrales
+	Dodewaard
+	Fukushima	
